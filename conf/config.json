@@ -1,0 +1,145 @@
+{
+  "Version":"1.0.0.9",
+  "ServerID":105,
+  "test":
+  {
+    "ip": "127.0.0.1",
+    "port":3000
+  },
+  "redis":
+  {
+    "ip": "127.0.0.1",
+    "normal":6379,
+    "ports":[6379, 6380,6381,6382,6383,6384],
+    "password":"CKaiyou2017"
+  },
+  "ProcessDB":{
+    "type": "ProcessDB",
+    "port": 0,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "ServerManager":{
+    "type": "ServerManager",
+    "port": 40009,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "RoomServer":
+  {
+    "type": "RoomServer",
+    "port": 40000,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "FrontServer":{
+    "type": "FrontServer",
+    "socketPort": 40001,
+    "rpcPort": 40002,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "GateServer":{
+    "type": "GateServer",
+    "port": 40003,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "FastMatchServer":{
+    "type": "FastMatchServer",
+    "port": 40004,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "MatchQueueServer":{
+    "type": "MatchQueueServer",
+    "port": 40005,
+      "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "BigMatchServer":{
+    "type": "BigMatchServer",
+    "port": 40006,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "TransfeServer":{
+    "type": "TransfeServer",
+    "port": 40007,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "ChargeServer":{
+    "type": "ChargeServer",
+    "port": 40008,
+    "ip": "127.0.0.1",
+    "master": {"host": "127.0.0.1", "port": 6001}
+  },
+  "MasterServer":{
+    "type": "MasterServer",
+    "port": 6001,
+    "ip": "127.0.0.1"
+  },
+  "staticStart": [
+    {
+      "type": "FrontServer",
+      "rpcPort": 40002,
+      "socketPort": 40001,
+      "httpPort": 0
+    },
+    {
+      "type": "RoomServer",
+      "rpcPort": 40000,
+      "socketPort": 0,
+      "httpPort": 0
+    },
+    {
+      "type": "RoomServer",
+      "rpcPort": 40100,
+      "socketPort": 0,
+      "httpPort": 0
+    },
+    {
+      "type": "GateServer",
+      "httpPort": 40003,
+      "socketPort": 0,
+      "rpcPort": 0
+    },
+    {
+      "type": "FastMatchServer",
+      "rpcPort": 40004,
+      "socketPort": 0,
+      "httpPort": 0
+    },
+    {
+      "type": "MatchQueueServer",
+      "rpcPort": 40005,
+      "socketPort": 0,
+      "httpPort": 0
+    },
+    {
+      "type": "BigMatchServer",
+      "rpcPort": 40006,
+      "socketPort": 0,
+      "httpPort": 0
+    },
+    {
+      "type": "TransfeServer",
+      "rpcPort": 40007,
+      "socketPort": 0,
+      "httpPort": 0
+    },
+    {
+      "type": "ChargeServer",
+      "httpPort": 40008,
+      "socketPort": 0,
+      "rpcPort": 0
+    },
+    {
+      "type": "ProcessDB",
+      "rpcPort": 0,
+      "socketPort": 0,
+      "httpPort": 0
+    }
+  ]
+}

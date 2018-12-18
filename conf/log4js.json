@@ -1,0 +1,17 @@
+{
+  "customBaseDir" : "/../logs/",
+  "customDefaultAtt" :{
+    "type": "dateFile",
+    "absolute": true,
+    "alwaysIncludePattern": true
+  },
+  "appenders": [
+    {"type": "console", "category": "console"},
+    {"pattern": "debug/yyyyMMddhh.txt", "category": "logDebug", "maxLogSize": 204800,"backups": 100},
+    {"pattern": "info/yyyyMMddhh.txt", "category": "logInfo", "maxLogSize": 204800,"backups": 100},
+    {"pattern": "warn/yyyyMMddhh.txt", "category": "logWarn", "maxLogSize": 102400,"backups": 100},
+    {"pattern": "err/yyyyMMddhh.txt", "category": "logErr", "maxLogSize": 102400,"backups": 100}
+  ],
+  "replaceConsole": true,
+  "levels":{ "logDebug": "DEBUG", "logInfo": "DEBUG", "logWarn": "DEBUG", "logErr": "DEBUG"}
+}

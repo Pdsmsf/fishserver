@@ -1,0 +1,11 @@
+{
+    "GameServer" : {
+        "hostname" : "127.0.0.1",
+        "port" : 6379,
+        "max" : 100,
+        "idleTimeoutMillis" : 30000,
+        "log" : false,
+        "proxy" : false,
+        "password":"CKaiyou2017"
+    }
+}

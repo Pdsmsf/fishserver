@@ -1,0 +1,32 @@
+{
+    "gameserver" : {
+		"host" : "121.42.231.52",
+		"port" : "3306",
+		"database" : "fish",
+		"user" : "root",
+		"password" : "fish@CK",
+		"max" : 100,
+		"idleTimeoutMillis" : 30000,
+		"log" : false
+    },
+	"chargeserver" : {
+		"host" : "192.168.2.250",
+		"port" : "3306",
+		"database" : "chargeserver",
+		"user" : "root",
+		"password" : "root",
+		"max" : 100,
+		"idleTimeoutMillis" : 30000,
+		"log" : false
+    },
+    	"gmserver" : {
+		"host" : "192.168.2.250",
+		"port" : "3306",
+		"database" : "gmserver",
+		"user" : "root",
+		"password" : "root",
+		"max" : 100,
+		"idleTimeoutMillis" : 30000,
+		"log" : false
+    }
+}
